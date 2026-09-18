@@ -1,0 +1,169 @@
+.pizza-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(4px);
+  z-index: 1000;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  .pizza-modal-sheet {
+    background: $bg-card;
+    width: 100%;
+    max-width: 600px;
+    max-height: 85vh;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border: 1px solid $border-color;
+    display: flex;
+    flex-direction: column;
+    animation: slideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    overflow: hidden;
+
+    .modal-header {
+      padding: 16px;
+      border-bottom: 1px solid $border-color;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      h3 {
+        font-size: 16px;
+        font-weight: 700;
+        color: $text-main;
+        margin: 0;
+      }
+
+      .close-modal-btn {
+        background: none;
+        border: none;
+        color: $text-muted;
+        font-size: 24px;
+        cursor: pointer;
+      }
+    }
+
+    .modal-body {
+      padding: 16px;
+      overflow-y: auto;
+      flex: 1;
+
+      .modal-item-info {
+        margin-bottom: 20px;
+
+        h4 {
+          font-size: 18px;
+          color: $text-main;
+          margin: 0 0 6px 0;
+        }
+
+        p {
+          font-size: 13px;
+          color: $text-muted;
+          margin: 0 0 8px 0;
+          line-height: 1.4;
+        }
+
+        .modal-item-base-price {
+          font-size: 16px;
+          font-weight: 700;
+          color: $accent-primary;
+        }
+      }
+
+      .customization-group {
+        margin-bottom: 18px;
+
+        .group-title {
+          display: block;
+          font-size: 12px;
+          font-weight: 600;
+          text-transform: uppercase;
+          letter-spacing: 0.5px;
+          color: $text-muted;
+          margin-bottom: 8px;
+        }
+
+        .options-grid {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+
+          .option-card {
+            background: $bg-primary;
+            border: 1px solid $border-color;
+            padding: 10px 14px;
+            border-radius: 10px;
+            color: $text-main;
+            font-size: 14px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.2s ease;
+
+            &.selected {
+              border-color: $accent-primary;
+              background: rgba(234, 88, 12, 0.1);
+            }
+          }
+        }
+
+        .quantity-selector {
+          display: flex;
+          align-items: center;
+          gap: 16px;
+          background: $bg-primary;
+          border: 1px solid $border-color;
+          width: fit-content;
+          padding: 6px 16px;
+          border-radius: 10px;
+
+          button {
+            background: none;
+            border: none;
+            color: $text-main;
+            font-size: 18px;
+            cursor: pointer;
+          }
+
+          span {
+            font-size: 16px;
+            font-weight: 700;
+            color: $text-main;
+            min-width: 20px;
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    .modal-footer {
+      padding: 16px;
+      border-top: 1px solid $border-color;
+      background: rgba(18, 18, 20, 0.95);
+
+      .add-to-cart-action-btn {
+        width: 100%;
+        background: $accent-primary;
+        color: white;
+        border: none;
+        padding: 14px;
+        border-radius: $radius-lg;
+        font-size: 15px;
+        font-weight: 700;
+        cursor: pointer;
+        box-shadow: 0 4px 14px $accent-glow;
+      }
+    }
+  }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}

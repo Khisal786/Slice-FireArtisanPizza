@@ -1,0 +1,50 @@
+<div class="pizza-modal-overlay" id="pizzaModalOverlay" style="display: none;">
+  <div class="pizza-modal-sheet" id="pizzaModalSheet">
+    
+    <div class="modal-header">
+      <button class="close-modal-btn" id="closePizzaModal">&times;</button>
+      <h3>Customize Your Pie</h3>
+    </div>
+
+    <div class="modal-body">
+      <div class="modal-item-info">
+        <h4 id="modalItemName">Loading...</h4>
+        <p id="modalItemDesc">Description goes here</p>
+        <div class="modal-item-base-price" id="modalItemBasePrice">$0.00</div>
+      </div>
+
+      <!-- Sizes Section (Conditional) -->
+      <div class="customization-group" id="sizesGroup">
+        <label class="group-title">1. Choose Size</label>
+        <div class="options-grid" id="sizesOptionsContainer">
+          <!-- Populated dynamically via JS -->
+        </div>
+      </div>
+
+      <!-- Crust Section (Conditional) -->
+      <div class="customization-group" id="crustGroup">
+        <label class="group-title">2. Choose Crust</label>
+        <div class="options-grid" id="crustOptionsContainer">
+          <!-- Populated dynamically via JS -->
+        </div>
+      </div>
+
+      <!-- Quantity Selector -->
+      <div class="customization-group">
+        <label class="group-title">Quantity</label>
+        <div class="quantity-selector">
+          <button type="button" id="qtyMinus">-</button>
+          <span id="modalQty">1</span>
+          <button type="button" id="qtyPlus">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-footer">
+      <button class="add-to-cart-action-btn" id="confirmAddToCartBtn">
+        Add to Order • <span id="modalTotalPrice">$0.00</span>
+      </button>
+    </div>
+
+  </div>
+</div>

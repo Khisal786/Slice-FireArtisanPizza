@@ -1,0 +1,78 @@
+restaurant_name: "Slice & Fire Artisan Pizza"
+whatsapp_number: "15551234567" # Placeholder US format
+currency: "$"
+
+categories:
+  - id: "specialty"
+    name: "🔥 Fire Specials"
+  - id: "classic"
+    name: "Classic Pies"
+  - id: "sides"
+    name: "Sides & Dips"
+  - id: "drinks"
+    name: "Drinks"
+
+items:
+  - id: "hot-honey-pep"
+    category: "specialty"
+    name: "The Hot Honey Pep"
+    description: "Crispy cupped pepperoni, fresh mozzarella, San Marzano tomato sauce, finished with a fiery local hot honey drizzle."
+    base_price: 18.99
+    image: "assets/images/dishes/hot-honey-pep.webp"
+    has_sizes: true
+    sizes:
+      - name: "Personal (10\")"
+        price_offset: 0.00
+      - name: "Medium (14\")"
+        price_offset: 5.00
+      - name: "Large (18\")"
+        price_offset: 9.00
+    crust_options:
+      - "Hand-Tossed Traditional"
+      - "Crispy Thin Crust"
+      - "Garlic Stuffed Crust (+$3)"
+
+  - id: "truffle-shroom"
+    category: "specialty"
+    name: "Truffle Mushroom White"
+    description: "Roasted wild mushrooms, garlic herb ricotta, fontina cheese, fresh thyme, and a black truffle oil finish."
+    base_price: 20.99
+    image: "assets/images/dishes/truffle-shroom.webp"
+    has_sizes: true
+    sizes:
+      - name: "Personal (10\")"
+        price_offset: 0.00
+      - name: "Medium (14\")"
+        price_offset: 5.00
+      - name: "Large (18\")"
+        price_offset: 9.00
+    crust_options:
+      - "Hand-Tossed Traditional"
+      - "Crispy Thin Crust"
+
+  - id: "classic-pep"
+    category: "classic"
+    name: "Old World Pepperoni"
+    description: "Double layer of aged artisan pepperoni, premium whole-milk mozzarella, and signature rich tomato sauce."
+    base_price: 16.99
+    image: "assets/images/dishes/pepperoni-classic.webp"
+    has_sizes: true
+    sizes:
+      - name: "Personal (10\")"
+        price_offset: 0.00
+      - name: "Medium (14\")"
+        price_offset: 4.00
+      - name: "Large (18\")"
+        price_offset: 8.00
+    crust_options:
+      - "Hand-Tossed Traditional"
+      - "Crispy Thin Crust"
+      - "Garlic Stuffed Crust (+$3)"
+
+  - id: "garlic-knots"
+    category: "sides"
+    name: "Wood-Fired Garlic Knots"
+    description: "Fresh dough tied into knots, baked golden, tossed in garlic-herb butter and parmesan. Served with warm marinara."
+    base_price: 7.99
+    image: "assets/images/dishes/garlic-knots.webp"
+    has_sizes: false

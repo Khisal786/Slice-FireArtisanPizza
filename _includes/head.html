@@ -1,0 +1,41 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>{{ site.title | default: "Slice & Fire Artisan Pizza" }}</title>
+  <meta name="description" content="Wood-fired artisan pizzas, hand-tossed crusts, and fiery local flavors. Order online for fast pickup or delivery.">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  
+  <!-- Favicon / Theme Color -->
+  <meta name="theme-color" content="#121214">
+
+  <!-- Local Restaurant Schema JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Slice & Fire Artisan Pizza",
+    "image": "",
+    "servesCuisine": "Pizza",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "742 Evergreen Terrace",
+      "addressLocality": "Los Angeles",
+      "addressRegion": "CA",
+      "postalCode": "90001",
+      "addressCountry": "US"
+    },
+    "telephone": "+15551234567",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "11:00",
+        "closes": "22:00"
+      }
+    ]
+  }
+  </script>
+</head>

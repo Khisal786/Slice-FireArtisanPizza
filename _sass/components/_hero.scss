@@ -1,0 +1,61 @@
+.hero-section {
+  padding: 24px 16px 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: left;
+  
+  /* Background Image Integration */
+  background-image: linear-gradient(rgba(18, 18, 20, 0.88), rgba(18, 18, 20, 0.94)), url('../images/hero-bg.webp');
+  background-size: cover;
+  background-position: center;
+  border-bottom: 1px solid $border-color;
+  position: relative;
+  overflow: hidden;
+
+  .tagline-pill {
+    display: inline-block;
+    background: rgba(234, 88, 12, 0.15);
+    color: $accent-primary;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: $radius-full;
+    margin-bottom: 12px;
+    border: 1px solid rgba(234, 88, 12, 0.3);
+  }
+
+  h2 {
+    font-size: 32px;
+    font-weight: 800;
+    color: $text-main;
+    line-height: 1.15;
+    margin: 0 0 10px 0;
+
+    .highlight {
+      color: $accent-primary;
+    }
+  }
+
+  p {
+    font-size: 14px;
+    color: $text-muted;
+    line-height: 1.4;
+    margin: 0 0 16px 0;
+  }
+
+  .btn-primary {
+    display: block;
+    width: 100%;
+    background: $accent-primary;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    border-radius: $radius-lg;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 4px 14px $accent-glow;
+    box-sizing: border-box;
+  }
+}

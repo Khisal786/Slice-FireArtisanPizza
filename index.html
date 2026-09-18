@@ -1,0 +1,35 @@
+---
+layout: default
+title: "Slice & Fire Artisan Pizza | Wood-Fired Menu"
+---
+
+<!-- Hero Section -->
+<section class="hero-section">
+  <div class="hero-content">
+    <div class="tagline-pill">🍕 Wood-Fired & Hand-Tossed</div>
+    <h2>Artisan Crust.<br><span class="highlight">Fiery Flavors.</span></h2>
+    <p>Locally sourced ingredients, 72-hour fermented dough, and baked blazing hot in our stone oven.</p>
+    
+    <div class="hero-actions">
+      <a href="#menu-anchor" class="btn-primary">Explore Menu & Order</a>
+    </div>
+  </div>
+</section>
+<div id="menu-anchor"></div>
+
+<!-- Sticky Category Navigation Pills -->
+<div class="sticky-pills-container">
+  <nav class="pills-nav" id="pillsNav">
+    {% for cat in site.data.menu.categories %}
+      <button class="pill-btn {% if forloop.first %}active{% endif %}" data-category="cat-{{ cat.id }}">
+        {{ cat.name }}
+      </button>
+    {% endfor %}
+  </nav>
+</div>
+
+<!-- Menu Items Grid Section -->
+{% include menu-section.html %}
+
+<!-- Location & Hours Section -->
+{% include location-hours.html %}
