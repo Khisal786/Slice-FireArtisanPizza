@@ -1,8 +1,8 @@
 title: "Slice & Fire Artisan Pizza"
 email: "orders@sliceandfire.example"
 description: "Wood-Fired & Hand-Tossed Artisan Pizza. Baked hot in our stone oven."
-baseurl: "" 
-url: "https://yourusername.github.io/"
+baseurl: "/Slice-FireArtisanPizza" 
+url: "https://khisal786.github.io/"
 
 # Enable Sass processing
 sass:
